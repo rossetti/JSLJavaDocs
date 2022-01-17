@@ -674,7 +674,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
  success</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prob</code> - The success probability</dd>
+<dd><code>prob</code> - The success probability, must be in range (0,1)</dd>
 <dd><code>numSuccess</code> - The desired number of successes</dd>
 </dl>
 </li>
@@ -692,7 +692,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
  success</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prob</code> - The success probability</dd>
+<dd><code>prob</code> - The success probability, must be in range (0,1)</dd>
 <dd><code>numSuccess</code> - The desired number of successes</dd>
 <dd><code>name</code> - an optional name/label</dd>
 </dl>
@@ -998,7 +998,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - the value to be evaluated</dd>
 <dd><code>r</code> - number of successes</dd>
-<dd><code>p</code> - the probability</dd>
+<dd><code>p</code> - the probability, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
 </dl>
@@ -1018,7 +1018,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - the value to be evaluated</dd>
 <dd><code>r</code> - number of successes</dd>
-<dd><code>p</code> - the probability</dd>
+<dd><code>p</code> - the probability, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
 </dl>
@@ -1040,7 +1040,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which prob is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability mass function evaluated at j</dd>
 </dl>
@@ -1062,7 +1062,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which prob is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dd><code>recursive</code> - true indicates that the recursive logarithmic algorithm should be used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
@@ -1085,7 +1085,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which cdf is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
 </dl>
@@ -1107,7 +1107,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which cdf is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dd><code>recursive</code> - true indicates that the recursive logarithmic algorithm should be used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
@@ -1130,7 +1130,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which ccdf is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
 </dl>
@@ -1152,7 +1152,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which ccdf is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dd><code>recursive</code> - true indicates that the recursive logarithmic algorithm should be used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the probability</dd>
@@ -1175,7 +1175,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which 1st order loss function is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the loss function value</dd>
 </dl>
@@ -1197,7 +1197,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which 1st order loss function is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dd><code>recursive</code> - true indicates that the recursive logarithmic algorithm should be used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the loss function value</dd>
@@ -1220,7 +1220,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - value for which 2nd order loss function is needed</dd>
 <dd><code>r</code> - num of successes</dd>
-<dd><code>p</code> - prob of success</dd>
+<dd><code>p</code> - prob of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the loss function value</dd>
 </dl>
@@ -1265,7 +1265,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>x</code> - The probability that the quantile is needed for</dd>
 <dd><code>r</code> - The number of successes parameter</dd>
-<dd><code>p</code> - The probability of success, must be in range [0,1)</dd>
+<dd><code>p</code> - The probability of success, must be in range (0,1)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the inverse CDF value</dd>
 </dl>
@@ -1287,7 +1287,7 @@ implements <a href="DiscreteDistributionIfc.html" title="interface in jsl.utilit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>x</code> - The probability that the quantile is needed for</dd>
 <dd><code>r</code> - The number of successes parameter</dd>
-<dd><code>p</code> - The probability of success, must be in range [0,1)</dd>
+<dd><code>p</code> - The probability of success, must be in range (0,1)</dd>
 <dd><code>recursive</code> - true indicates that the recursive logarithmic algorithm should be used</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the inverse CDF value</dd>

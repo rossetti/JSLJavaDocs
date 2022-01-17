@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="Database.html" title="class in jslx.dbutilities.dbutil">Database</a></code>, <code><a href="EmbeddedDerbyDatabase.html" title="class in jslx.dbutilities.dbutil">EmbeddedDerbyDatabase</a></code></dd>
+<dd><code><a href="Database.html" title="class in jslx.dbutilities.dbutil">Database</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">DatabaseIfc</span></pre>
@@ -882,7 +882,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a connection to the database</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.sql.SQLException</code></dd>
+<dd><code>java.sql.SQLException</code> - if there is a problem with the connection</dd>
 </dl>
 </li>
 </ul>
@@ -1433,8 +1433,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                              throws java.io.IOException</pre>
 <div class="block">Writes all the tables to an Excel workbook, uses name of schema, uses the working directory</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>schemaName</code> - the name of the schema containing the tables</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1453,7 +1455,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>schemaName</code> - the name of the schema that should contain the tables</dd>
 <dd><code>wbDirectory</code> - directory of the workbook, if null uses the working directory</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1472,7 +1474,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>schemaName</code> - the name of the schema that should contain the tables</dd>
 <dd><code>wbName</code> - name of the workbook, if null uses name of database</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1493,7 +1495,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>wbName</code> - name of the workbook, if null uses name of database</dd>
 <dd><code>wbDirectory</code> - directory of the workbook, if null uses the working directory</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1514,7 +1516,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>wbName</code> - name of the workbook, if null uses name of database</dd>
 <dd><code>wbDirectory</code> - directory of the workbook, if null uses the working directory</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1598,7 +1600,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if all commands are executed</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1680,7 +1682,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the list of strings of the commands</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1767,7 +1769,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of strings representing each SQL command</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - the exception</dd>
 </dl>
 </li>
 </ul>
@@ -1811,7 +1813,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>pkgDirName</code> - the directory that holds the target package, must not be null</dd>
 <dd><code>packageName</code> - name of package to be created to hold generated code, must not be null</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code></dd>
+<dd><code>java.lang.Exception</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>
@@ -1835,7 +1837,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>pkgDirName</code> - the directory that holds the target package, must not be null</dd>
 <dd><code>packageName</code> - name of package to be created to hold generated code, must not be null</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code></dd>
+<dd><code>java.lang.Exception</code> - if there is a problem</dd>
 </dl>
 </li>
 </ul>

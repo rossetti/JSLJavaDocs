@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":42,"i19":10,"i20":10};
+var data = {"i0":10,"i1":42,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -276,11 +276,9 @@ extends org.jooq.impl.SchemaImpl</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bind(org.jooq.BindContext)">bind</a></span>&#8203;(org.jooq.BindContext&nbsp;arg0)</code></th>
-<td class="colLast">
-<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
-</td>
+<td class="colFirst"><code>org.jooq.Name</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#$name()">$name</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected org.jooq.DSLContext</code></td>
@@ -374,18 +372,11 @@ extends org.jooq.impl.SchemaImpl</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toSQL(org.jooq.RenderContext)">toSQL</a></span>&#8203;(org.jooq.RenderContext&nbsp;arg0)</code></th>
-<td class="colLast">
-<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
-</td>
-</tr>
-<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected org.jooq.exception.DataAccessException</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translate(java.lang.String,java.sql.SQLException)">translate</a></span>&#8203;(java.lang.String&nbsp;arg0,
          java.sql.SQLException&nbsp;arg1)</code></th>
@@ -397,7 +388,7 @@ extends org.jooq.impl.SchemaImpl</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.jooq.impl.SchemaImpl</h3>
-<code>accept, clauses, domainStream, equals, getDomain, getDomain, getDomains, getSequence, getSequence, getSequences, getTable, getTable, getUDT, getUDT, getUDTs, sequenceStream, tableStream, udtStream</code></li>
+<code>accept, clauses, domainStream, equals, foreignKeyStream, getDomain, getDomain, getDomains, getForeignKeys, getForeignKeys, getForeignKeys, getIndexes, getIndexes, getIndexes, getPrimaryKeys, getPrimaryKeys, getPrimaryKeys, getSequence, getSequence, getSequences, getTable, getTable, getUDT, getUDT, getUDTs, getUniqueKeys, getUniqueKeys, getUniqueKeys, indexStream, primaryKeyStream, sequenceStream, tableStream, udtStream, uniqueKeyStream</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -411,7 +402,7 @@ extends org.jooq.impl.SchemaImpl</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.jooq.Named</h3>
-<code>getComment, getCommentPart, getName, getQualifiedName, getUnqualifiedName</code></li>
+<code>$name, getComment, getCommentPart, getName, getQualifiedName, getUnqualifiedName</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.jooq.QueryPart">
@@ -684,36 +675,16 @@ extends org.jooq.impl.SchemaImpl</pre>
 </dl>
 </li>
 </ul>
-<a id="toSQL(org.jooq.RenderContext)">
+<a id="$name()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>toSQL</h4>
-<pre class="methodSignature">@Deprecated
-public final&nbsp;void&nbsp;toSQL&#8203;(org.jooq.RenderContext&nbsp;arg0)</pre>
-<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
+<h4>$name</h4>
+<pre class="methodSignature">public final&nbsp;org.jooq.Name&nbsp;$name()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>toSQL</code>&nbsp;in interface&nbsp;<code>org.jooq.QueryPartInternal</code></dd>
-</dl>
-</li>
-</ul>
-<a id="bind(org.jooq.BindContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>bind</h4>
-<pre class="methodSignature">@Deprecated
-public final&nbsp;void&nbsp;bind&#8203;(org.jooq.BindContext&nbsp;arg0)
-                throws org.jooq.exception.DataAccessException</pre>
-<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>bind</code>&nbsp;in interface&nbsp;<code>org.jooq.QueryPartInternal</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>org.jooq.exception.DataAccessException</code></dd>
+<dd><code>$name</code>&nbsp;in interface&nbsp;<code>org.jooq.Named</code></dd>
 </dl>
 </li>
 </ul>

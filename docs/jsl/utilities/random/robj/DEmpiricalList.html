@@ -130,6 +130,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of elements in the list</dd>
+</dl>
+<dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="../rng/GetRandomNumberStreamIfc.html" title="interface in jsl.utilities.random.rng">GetRandomNumberStreamIfc</a></code>, <code><a href="../rng/RNStreamControlIfc.html" title="interface in jsl.utilities.random.rng">RNStreamControlIfc</a></code>, <code><a href="../rng/SetRandomNumberStreamIfc.html" title="interface in jsl.utilities.random.rng">SetRandomNumberStreamIfc</a></code>, <code><a href="RElementIfc.html" title="interface in jsl.utilities.random.robj">RElementIfc</a>&lt;T&gt;</code></dd>
 </dl>
@@ -137,6 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">DEmpiricalList&lt;T&gt;</span>
 extends java.lang.Object
 implements <a href="RElementIfc.html" title="interface in jsl.utilities.random.robj">RElementIfc</a>&lt;T&gt;</pre>
+<div class="block">Randomly selects the elements in the list according to a supplied CDF across the items</div>
 </li>
 </ul>
 </div>
@@ -394,6 +399,11 @@ implements <a href="RElementIfc.html" title="interface in jsl.utilities.random.r
 <h4>DEmpiricalList</h4>
 <pre>public&nbsp;DEmpiricalList&#8203;(java.util.List&lt;<a href="DEmpiricalList.html" title="type parameter in DEmpiricalList">T</a>&gt;&nbsp;elements,
                       double[]&nbsp;cdf)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>elements</code> - the list of elements, must not be null</dd>
+<dd><code>cdf</code> - an array holding the cumulative probabilities across the elements in the list</dd>
+</dl>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.util.List,double[],jsl.utilities.random.rng.RNStreamIfc)">
@@ -405,6 +415,12 @@ implements <a href="RElementIfc.html" title="interface in jsl.utilities.random.r
 <pre>public&nbsp;DEmpiricalList&#8203;(java.util.List&lt;<a href="DEmpiricalList.html" title="type parameter in DEmpiricalList">T</a>&gt;&nbsp;elements,
                       double[]&nbsp;cdf,
                       <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>elements</code> - the list of elements, must not be null</dd>
+<dd><code>cdf</code> - an array holding the cumulative probabilities across the elements in the list</dd>
+<dd><code>rng</code> - the underlying random number stream to use for randomness</dd>
+</dl>
 </li>
 </ul>
 </li>

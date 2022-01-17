@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public final class <span class="typeNameLabel">BinomialRV</span>
 extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rvariable">AbstractRVariable</a></pre>
-<div class="block">Binomial(probability of success, number of trials)</div>
+<div class="block">BinomialRV(probability of success, number of trials)</div>
 </li>
 </ul>
 </div>
@@ -196,20 +196,20 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int)">BinomialRV</a></span>&#8203;(double&nbsp;prob,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int)">BinomialRV</a></span>&#8203;(double&nbsp;pSuccess,
           int&nbsp;numTrials)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int,int)">BinomialRV</a></span>&#8203;(double&nbsp;prob,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int,int)">BinomialRV</a></span>&#8203;(double&nbsp;pSuccess,
           int&nbsp;numTrials,
           int&nbsp;streamNum)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int,jsl.utilities.random.rng.RNStreamIfc)">BinomialRV</a></span>&#8203;(double&nbsp;prob,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,int,jsl.utilities.random.rng.RNStreamIfc)">BinomialRV</a></span>&#8203;(double&nbsp;pSuccess,
           int&nbsp;numTrials,
-          <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</code></th>
+          <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -332,8 +332,13 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>BinomialRV</h4>
-<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;prob,
+<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;pSuccess,
                   int&nbsp;numTrials)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
+<dd><code>numTrials</code> - the number of trials, must be greater than 0</dd>
+</dl>
 </li>
 </ul>
 <a id="&lt;init&gt;(double,int,int)">
@@ -342,9 +347,15 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>BinomialRV</h4>
-<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;prob,
+<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;pSuccess,
                   int&nbsp;numTrials,
                   int&nbsp;streamNum)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
+<dd><code>numTrials</code> - the number of trials, must be greater than 0</dd>
+<dd><code>streamNum</code> - the stream number from the stream provider to use</dd>
+</dl>
 </li>
 </ul>
 <a id="&lt;init&gt;(double,int,jsl.utilities.random.rng.RNStreamIfc)">
@@ -353,9 +364,15 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BinomialRV</h4>
-<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;prob,
+<pre>public&nbsp;BinomialRV&#8203;(double&nbsp;pSuccess,
                   int&nbsp;numTrials,
-                  <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+                  <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
+<dd><code>numTrials</code> - the number of trials, must be greater than 0</dd>
+<dd><code>stream</code> - the stream from the stream provider to use</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -374,7 +391,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstance</h4>
-<pre class="methodSignature">public final&nbsp;<a href="BinomialRV.html" title="class in jsl.utilities.random.rvariable">BinomialRV</a>&nbsp;newInstance&#8203;(<a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+<pre class="methodSignature">public&nbsp;<a href="BinomialRV.html" title="class in jsl.utilities.random.rvariable">BinomialRV</a>&nbsp;newInstance&#8203;(<a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rng</code> - the RNStreamIfc to use</dd>
@@ -402,7 +419,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>getProb</h4>
-<pre class="methodSignature">public final&nbsp;double&nbsp;getProb()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getProb()</pre>
 <div class="block">Gets the success probability</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -416,7 +433,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>getTrials</h4>
-<pre class="methodSignature">public final&nbsp;int&nbsp;getTrials()</pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;getTrials()</pre>
 <div class="block">Gets the number of trials</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -430,7 +447,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>generate</h4>
-<pre class="methodSignature">protected final&nbsp;double&nbsp;generate()</pre>
+<pre class="methodSignature">protected&nbsp;double&nbsp;generate()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="AbstractRVariable.html#generate()">generate</a></code>&nbsp;in class&nbsp;<code><a href="AbstractRVariable.html" title="class in jsl.utilities.random.rvariable">AbstractRVariable</a></code></dd>

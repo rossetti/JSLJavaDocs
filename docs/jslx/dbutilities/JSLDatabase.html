@@ -1110,6 +1110,10 @@ extends java.lang.Object</pre>
 <h4>beforeExperiment</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;beforeExperiment&#8203;(<a href="../../jsl/simulation/Simulation.html" title="class in jsl.simulation">Simulation</a>&nbsp;simulation)</pre>
 <div class="block">Called by the JSLDatabaseObserver before the simulation experiment is run</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>simulation</code> - the simulation</dd>
+</dl>
 </li>
 </ul>
 <a id="afterReplication(jsl.simulation.Simulation)">
@@ -1120,6 +1124,10 @@ extends java.lang.Object</pre>
 <h4>afterReplication</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;afterReplication&#8203;(<a href="../../jsl/simulation/Simulation.html" title="class in jsl.simulation">Simulation</a>&nbsp;simulation)</pre>
 <div class="block">Called by JSLDatabaseObserver after the simulation experiment replication is run</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>simulation</code> - the simulation</dd>
+</dl>
 </li>
 </ul>
 <a id="afterExperiment(jsl.simulation.Simulation)">
@@ -1130,6 +1138,10 @@ extends java.lang.Object</pre>
 <h4>afterExperiment</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;afterExperiment&#8203;(<a href="../../jsl/simulation/Simulation.html" title="class in jsl.simulation">Simulation</a>&nbsp;simulation)</pre>
 <div class="block">Called by JSLDatabaseObserver after the simulation experiment is run</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>simulation</code> - the simulation</dd>
+</dl>
 </li>
 </ul>
 <a id="insertSimulationRunRecord(jsl.simulation.Simulation)">
@@ -1931,7 +1943,7 @@ extends java.lang.Object</pre>
 <div class="block">Writes all the tables to an Excel workbook,  uses JSL.ExcelDir for the directory</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - the checked exception</dd>
 </dl>
 </li>
 </ul>
@@ -1948,7 +1960,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>wbDirectory</code> - directory of the workbook, if null uses the working directory</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - the checked exception</dd>
 </dl>
 </li>
 </ul>
@@ -1965,7 +1977,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>wbName</code> - name of the workbook, if null uses name of database</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - the checked exception</dd>
 </dl>
 </li>
 </ul>
@@ -1984,7 +1996,7 @@ extends java.lang.Object</pre>
 <dd><code>wbName</code> - name of the workbook, if null uses name of database</dd>
 <dd><code>wbDirectory</code> - directory of the workbook, if null uses the working directory</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - the checked exception</dd>
 </dl>
 </li>
 </ul>

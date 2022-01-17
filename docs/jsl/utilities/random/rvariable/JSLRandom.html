@@ -190,9 +190,9 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyFirstNValues(T%5B%5D,int)">copyFirstNValues</a></span>&#8203;(T[]&nbsp;x,
-                int&nbsp;N)</code></th>
+<td class="colFirst"><code>static double[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copyFirstNValues(double%5B%5D,int)">copyFirstNValues</a></span>&#8203;(double[]&nbsp;x,
+                int&nbsp;n)</code></th>
 <td class="colLast">
 <div class="block">Facilitates sampling without replacement to a new array.</div>
 </td>
@@ -530,7 +530,7 @@ extends java.lang.Object</pre>
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>static double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rBernoulli(double,jsl.utilities.random.rng.RNStreamIfc)">rBernoulli</a></span>&#8203;(double&nbsp;pSuccess,
-          <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</code></th>
+          <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i45" class="rowColor">
@@ -608,7 +608,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rBinomial(double,int,jsl.utilities.random.rng.RNStreamIfc)">rBinomial</a></span>&#8203;(double&nbsp;pSuccess,
          int&nbsp;nTrials,
-         <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</code></th>
+         <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i54" class="altColor">
@@ -1335,11 +1335,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>rBernoulli</h4>
 <pre class="methodSignature">public static&nbsp;double&nbsp;rBernoulli&#8203;(double&nbsp;pSuccess,
-                                <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+                                <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
-<dd><code>rng</code> - the RNStreamIfc</dd>
+<dd><code>stream</code> - the RNStreamIfc</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the random value</dd>
 </dl>
@@ -1389,12 +1389,12 @@ extends java.lang.Object</pre>
 <h4>rBinomial</h4>
 <pre class="methodSignature">public static&nbsp;int&nbsp;rBinomial&#8203;(double&nbsp;pSuccess,
                             int&nbsp;nTrials,
-                            <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+                            <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;stream)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
 <dd><code>nTrials</code> - the number of trials, must be greater than 0</dd>
-<dd><code>rng</code> - the RNStreamIfc, must not be null</dd>
+<dd><code>stream</code> - the RNStreamIfc, must not be null</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the random value</dd>
 </dl>
@@ -1584,7 +1584,7 @@ extends java.lang.Object</pre>
                                int&nbsp;streamNum)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pSuccess</code> - the probability of success</dd>
+<dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
 <dd><code>rSuccesses</code> - number of trials until rth success</dd>
 <dd><code>streamNum</code> - the stream number from the stream provider to use</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1603,7 +1603,7 @@ extends java.lang.Object</pre>
                                <a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pSuccess</code> - the probability of success</dd>
+<dd><code>pSuccess</code> - the probability of success, must be in (0,1)</dd>
 <dd><code>rSuccesses</code> - number of trials until rth success</dd>
 <dd><code>rng</code> - the RNStreamIfc, must not be null</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -3113,26 +3113,22 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="copyFirstNValues(java.lang.Object[],int)">
-<!--   -->
-</a><a id="copyFirstNValues(T[],int)">
+<a id="copyFirstNValues(double[],int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>copyFirstNValues</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;copyFirstNValues&#8203;(T[]&nbsp;x,
-                                       int&nbsp;N)</pre>
+<pre class="methodSignature">public static&nbsp;double[]&nbsp;copyFirstNValues&#8203;(double[]&nbsp;x,
+                                        int&nbsp;n)</pre>
 <div class="block">Facilitates sampling without replacement to a new array. Example usage:
  <p>
  sampleWithoutReplacement(x, 5); // first sample into first 5 slots
  double[] sample = copyFirstNValues(x, 5); // now copy from the first 5 slots</div>
 <dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the type of the array</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>x</code> - the array to copy from</dd>
-<dd><code>N</code> - the number of values to copy</dd>
+<dd><code>n</code> - the number of values to copy</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new array with the values</dd>
 </dl>

@@ -415,7 +415,7 @@ extends java.lang.Object</pre>
 <dd><code>figureToPlot</code> - the constructed figure to plot</dd>
 <dd><code>pathToSaveFigure</code> - the path to the file that will hold the html for the plot</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if a problem with the temp files occurs</dd>
 </dl>
 </li>
 </ul>
@@ -433,6 +433,8 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dataName</code> - the name of the response</dd>
 <dd><code>partialSums</code> - the partial sums to plot</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the figure</dd>
 </dl>
 </li>
 </ul>
@@ -448,6 +450,8 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>analyzer</code> - the WelchDataFileAnalyzer that has the Welch data to display</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the figure</dd>
 </dl>
 </li>
 </ul>
@@ -464,6 +468,9 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>analyzer</code> - the WelchDataFileAnalyzer that has the Welch data to display</dd>
+<dd><code>totalNumObservations</code> - the number of observations to plot</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the figure</dd>
 </dl>
 </li>
 </ul>
@@ -479,6 +486,8 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dataArrayObserver</code> - the WelchDataArrayObserver that has the Welch data to display</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the figure</dd>
 </dl>
 </li>
 </ul>
@@ -496,9 +505,12 @@ extends java.lang.Object</pre>
  Stick with less than 50K points</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>title</code> - the title of the chart</dd>
 <dd><code>dataName</code> - the name of the response</dd>
 <dd><code>avg</code> - the Welch averages</dd>
 <dd><code>cumAvg</code> - the cumulative averages</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the figure</dd>
 </dl>
 </li>
 </ul>

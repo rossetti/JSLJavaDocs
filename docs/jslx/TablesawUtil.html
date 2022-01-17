@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -210,38 +210,13 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNextEnumConstant()">getNextEnumConstant</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Should be used by subclasses to get the next constant
- so that unique constants can be used</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.util.Map&lt;java.lang.String,&#8203;tech.tablesaw.api.Table&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeJSLDatabaseViewTables(jslx.dbutilities.JSLDatabase)">makeJSLDatabaseViewTables</a></span>&#8203;(<a href="dbutilities/JSLDatabase.html" title="class in jslx.dbutilities">JSLDatabase</a>&nbsp;db)</code></th>
 <td class="colLast">
 <div class="block">Returns a map that holds Tablesaw table representations of all of the JSLDatabase views.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(java.nio.file.Path,java.lang.String)">makeTable</a></span>&#8203;(java.nio.file.Path&nbsp;pathToWorkbook,
-         java.lang.String&nbsp;sheetName)</code></th>
-<td class="colLast">
-<div class="block">Makes a Tablesaw table from a sheet within an Excel workbook.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(java.nio.file.Path,java.lang.String,java.lang.String)">makeTable</a></span>&#8203;(java.nio.file.Path&nbsp;pathToWorkbook,
-         java.lang.String&nbsp;sheetName,
-         java.lang.String&nbsp;tableName)</code></th>
-<td class="colLast">
-<div class="block">Makes a Tablesaw table from a sheet within an Excel workbook.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(jsl.observers.ReplicationDataCollector)">makeTable</a></span>&#8203;(<a href="../jsl/observers/ReplicationDataCollector.html" title="class in jsl.observers">ReplicationDataCollector</a>&nbsp;dataCollector)</code></th>
 <td class="colLast">
@@ -249,7 +224,7 @@ extends java.lang.Object</pre>
  the ReplicationDataCollector.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(jslx.dbutilities.dbutil.DatabaseIfc,java.lang.String)">makeTable</a></span>&#8203;(<a href="dbutilities/dbutil/DatabaseIfc.html" title="interface in jslx.dbutilities.dbutil">DatabaseIfc</a>&nbsp;db,
          java.lang.String&nbsp;tableName)</code></th>
@@ -257,7 +232,7 @@ extends java.lang.Object</pre>
 <div class="block">Makes a Tablesaw table based on the data within the table of the database.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(jslx.dbutilities.JSLDatabase,java.lang.String)">makeTable</a></span>&#8203;(<a href="dbutilities/JSLDatabase.html" title="class in jslx.dbutilities">JSLDatabase</a>&nbsp;db,
          java.lang.String&nbsp;tableName)</code></th>
@@ -265,28 +240,11 @@ extends java.lang.Object</pre>
 <div class="block">Makes a Tablesaw table based on the data within the table of the JSLDatabase.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTableAsExcelSheet(tech.tablesaw.api.Table,org.apache.poi.ss.usermodel.Sheet)">writeTableAsExcelSheet</a></span>&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                      org.apache.poi.ss.usermodel.Sheet&nbsp;sheet)</code></th>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static tech.tablesaw.api.Table</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTable(jslx.tabularfiles.TabularInputFile)">makeTable</a></span>&#8203;(<a href="tabularfiles/TabularInputFile.html" title="class in jslx.tabularfiles">TabularInputFile</a>&nbsp;tabularInputFile)</code></th>
 <td class="colLast">
-<div class="block">Writes the contents from a Tablesaw Table to the Excel sheet.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTableToExcelWorkbook(tech.tablesaw.api.Table,java.lang.String)">writeTableToExcelWorkbook</a></span>&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                         java.lang.String&nbsp;wbName)</code></th>
-<td class="colLast">
-<div class="block">Writes the table to a workbook.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeTableToExcelWorkbook(tech.tablesaw.api.Table,java.nio.file.Path)">writeTableToExcelWorkbook</a></span>&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                         java.nio.file.Path&nbsp;pathToWb)</code></th>
-<td class="colLast">
-<div class="block">Writes the table to a new workbook.</div>
+<div class="block">Makes a Tablesaw table based on the data within the tabular file.</div>
 </td>
 </tr>
 </table>
@@ -351,21 +309,6 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getNextEnumConstant()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getNextEnumConstant</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;getNextEnumConstant()</pre>
-<div class="block">Should be used by subclasses to get the next constant
- so that unique constants can be used</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the constant</dd>
-</dl>
-</li>
-</ul>
 <a id="makeTable(jsl.observers.ReplicationDataCollector)">
 <!--   -->
 </a>
@@ -407,6 +350,24 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="makeTable(jslx.tabularfiles.TabularInputFile)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeTable</h4>
+<pre class="methodSignature">public static&nbsp;tech.tablesaw.api.Table&nbsp;makeTable&#8203;(<a href="tabularfiles/TabularInputFile.html" title="class in jslx.tabularfiles">TabularInputFile</a>&nbsp;tabularInputFile)</pre>
+<div class="block">Makes a Tablesaw table based on the data within the tabular file. If there is an exception or
+ other issue accessing the data in the table, then an empty Table is returned (no columns). In
+ either case a warning message is logged.  Any exceptions are squelched.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tabularInputFile</code> - the tabular file to convert, must not be null</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Tablesaw table</dd>
+</dl>
+</li>
+</ul>
 <a id="makeTable(jslx.dbutilities.JSLDatabase,java.lang.String)">
 <!--   -->
 </a>
@@ -443,111 +404,6 @@ extends java.lang.Object</pre>
 <dd><code>db</code> - an instance of a JSLDatabase</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the map</dd>
-</dl>
-</li>
-</ul>
-<a id="makeTable(java.nio.file.Path,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeTable</h4>
-<pre class="methodSignature">public static&nbsp;tech.tablesaw.api.Table&nbsp;makeTable&#8203;(java.nio.file.Path&nbsp;pathToWorkbook,
-                                                java.lang.String&nbsp;sheetName)</pre>
-<div class="block">Makes a Tablesaw table from a sheet within an Excel workbook. There are some assumptions here.
- 1) the sheet contains columns of data with each column holding the same data type
- 2) that the sheet can be converted to a valid csv file format
-
- If something goes wrong an empty table is create and a warning is logged.
-
- If you have trouble with this, then you might first translate the Excel workbook to a csv file
- and then use the many options available within Tablesaw to import the data from csv.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pathToWorkbook</code> - must not be null, the path to the Excel workbook</dd>
-<dd><code>sheetName</code> - must not be null, must be a valid sheet name within the workbook</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the table, will have the same name as the sheet</dd>
-</dl>
-</li>
-</ul>
-<a id="makeTable(java.nio.file.Path,java.lang.String,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>makeTable</h4>
-<pre class="methodSignature">public static&nbsp;tech.tablesaw.api.Table&nbsp;makeTable&#8203;(java.nio.file.Path&nbsp;pathToWorkbook,
-                                                java.lang.String&nbsp;sheetName,
-                                                java.lang.String&nbsp;tableName)</pre>
-<div class="block">Makes a Tablesaw table from a sheet within an Excel workbook. There are some assumptions here.
- 1) the sheet contains columns of data with each column holding the same data type
- 2) that the sheet can be converted to a valid csv file format.
-
- If something goes wrong an empty table is create and a warning is logged.
-
- If you have trouble with this, then you might first translate the Excel workbook to a csv file
- and then use the many options available within Tablesaw to import the data from csv.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pathToWorkbook</code> - must not be null, the path to the Excel workbook</dd>
-<dd><code>sheetName</code> - must not be null, must be a valid sheet name within the workbook</dd>
-<dd><code>tableName</code> - the name that you want for the created table, if null it will have the sheet name</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the table</dd>
-</dl>
-</li>
-</ul>
-<a id="writeTableToExcelWorkbook(tech.tablesaw.api.Table,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeTableToExcelWorkbook</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeTableToExcelWorkbook&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                                             java.lang.String&nbsp;wbName)</pre>
-<div class="block">Writes the table to a workbook. A new workbook is created and a sheet with the same
-  name as the table is created. The data is written to the sheet.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>table</code> - the Tablesaw Table to write out, must not be null</dd>
-<dd><code>wbName</code> - the name to the workbook, must not be null. If there already is a workbook file at the path
-                 location, then it is over written</dd>
-</dl>
-</li>
-</ul>
-<a id="writeTableToExcelWorkbook(tech.tablesaw.api.Table,java.nio.file.Path)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeTableToExcelWorkbook</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeTableToExcelWorkbook&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                                             java.nio.file.Path&nbsp;pathToWb)</pre>
-<div class="block">Writes the table to a new workbook. A new workbook is created and a sheet with the same
-  name as the table is created. The data is written to the sheet.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>table</code> - the Tablesaw Table to write out, must not be null</dd>
-<dd><code>pathToWb</code> - the path to the workbook, must not be null. If there already is a workbook file at the path
-                 location, then it is over written</dd>
-</dl>
-</li>
-</ul>
-<a id="writeTableAsExcelSheet(tech.tablesaw.api.Table,org.apache.poi.ss.usermodel.Sheet)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeTableAsExcelSheet</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeTableAsExcelSheet&#8203;(tech.tablesaw.api.Table&nbsp;table,
-                                          org.apache.poi.ss.usermodel.Sheet&nbsp;sheet)</pre>
-<div class="block">Writes the contents from a Tablesaw Table to the Excel sheet. Includes the column names as the first row of
- the sheet.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>table</code> - the Tablesaw Table, must not be null</dd>
-<dd><code>sheet</code> - the Excel sheet to write to, must not be null</dd>
 </dl>
 </li>
 </ul>

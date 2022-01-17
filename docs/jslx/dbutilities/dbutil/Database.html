@@ -211,6 +211,13 @@ implements <a href="DatabaseIfc.html" title="interface in jslx.dbutilities.dbuti
         org.jooq.SQLDialect&nbsp;dialect)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,javax.sql.DataSource,org.jooq.SQLDialect,org.jooq.conf.Settings)">Database</a></span>&#8203;(java.lang.String&nbsp;dbLabel,
+        javax.sql.DataSource&nbsp;dataSource,
+        org.jooq.SQLDialect&nbsp;dialect,
+        org.jooq.conf.Settings&nbsp;settings)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -317,7 +324,7 @@ implements <a href="DatabaseIfc.html" title="interface in jslx.dbutilities.dbuti
 <a id="&lt;init&gt;(java.lang.String,javax.sql.DataSource,org.jooq.SQLDialect)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Database</h4>
 <pre>public&nbsp;Database&#8203;(java.lang.String&nbsp;dbLabel,
@@ -331,6 +338,28 @@ implements <a href="DatabaseIfc.html" title="interface in jslx.dbutilities.dbuti
 <dd><code>dataSource</code> - the DataSource backing the database, must not be null</dd>
 <dd><code>dialect</code> - the SLQ dialect for this type of database. It obviously must
                    be consistent with the database referenced by the connection</dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(java.lang.String,javax.sql.DataSource,org.jooq.SQLDialect,org.jooq.conf.Settings)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Database</h4>
+<pre>public&nbsp;Database&#8203;(java.lang.String&nbsp;dbLabel,
+                javax.sql.DataSource&nbsp;dataSource,
+                org.jooq.SQLDialect&nbsp;dialect,
+                org.jooq.conf.Settings&nbsp;settings)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dbLabel</code> - a string representing a label for the database must not be null. This label
+                   may or may not have any relation to the actual name of the database. This is
+                   used for labeling purposes.</dd>
+<dd><code>dataSource</code> - the DataSource backing the database, must not be null</dd>
+<dd><code>dialect</code> - the SLQ dialect for this type of database. It obviously must
+                   be consistent with the database referenced by the connection</dd>
+<dd><code>settings</code> - the JOOQ settings for the database context, may be null</dd>
 </dl>
 </li>
 </ul>

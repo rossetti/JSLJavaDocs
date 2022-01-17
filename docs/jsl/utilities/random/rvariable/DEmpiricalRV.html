@@ -142,10 +142,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public final class <span class="typeNameLabel">DEmpiricalRV</span>
 extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rvariable">AbstractRVariable</a></pre>
 <div class="block">Discrete Empirical Random Variable. Randomly selects from the supplied
-  values in the value array according to the supplied CDF array. The probability array
-  must have valid probability elements and last element equal to 1.
-  Every element must be greater than or equal to the previous element in the CDF array.
-  That is, monotonically increasing.</div>
+ values in the value array according to the supplied CDF array. The CDF array
+ must have valid probability elements and last element equal to 1.
+ Every element must be greater than or equal to the previous element in the CDF array.
+ That is, monotonically increasing.</div>
 </li>
 </ul>
 </div>
@@ -345,7 +345,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>values</code> - array to select from</dd>
 <dd><code>cdf</code> - the cumulative probability associated with each element of
- array</dd>
+               array</dd>
 </dl>
 </li>
 </ul>
@@ -363,7 +363,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>values</code> - array to select from</dd>
 <dd><code>cdf</code> - the cumulative probability associated with each element of
- array</dd>
+                  array</dd>
 <dd><code>streamNum</code> - the stream number</dd>
 </dl>
 </li>
@@ -382,7 +382,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>values</code> - array to select from</dd>
 <dd><code>cdf</code> - the cumulative probability associated with each element of
- array</dd>
+               array</dd>
 <dd><code>rng</code> - the source of randomness</dd>
 </dl>
 </li>
@@ -403,7 +403,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstance</h4>
-<pre class="methodSignature">public final&nbsp;<a href="DEmpiricalRV.html" title="class in jsl.utilities.random.rvariable">DEmpiricalRV</a>&nbsp;newInstance&#8203;(<a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
+<pre class="methodSignature">public&nbsp;<a href="DEmpiricalRV.html" title="class in jsl.utilities.random.rvariable">DEmpiricalRV</a>&nbsp;newInstance&#8203;(<a href="../rng/RNStreamIfc.html" title="interface in jsl.utilities.random.rng">RNStreamIfc</a>&nbsp;rng)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rng</code> - the RNStreamIfc to use</dd>
@@ -418,7 +418,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>getValues</h4>
-<pre class="methodSignature">public final&nbsp;double[]&nbsp;getValues()</pre>
+<pre class="methodSignature">public&nbsp;double[]&nbsp;getValues()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the values to select from</dd>
@@ -431,7 +431,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>getCDF</h4>
-<pre class="methodSignature">public final&nbsp;double[]&nbsp;getCDF()</pre>
+<pre class="methodSignature">public&nbsp;double[]&nbsp;getCDF()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the cdf to select with</dd>
@@ -457,7 +457,7 @@ extends <a href="AbstractRVariable.html" title="class in jsl.utilities.random.rv
 <ul class="blockList">
 <li class="blockList">
 <h4>generate</h4>
-<pre class="methodSignature">protected final&nbsp;double&nbsp;generate()</pre>
+<pre class="methodSignature">protected&nbsp;double&nbsp;generate()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="AbstractRVariable.html#generate()">generate</a></code>&nbsp;in class&nbsp;<code><a href="AbstractRVariable.html" title="class in jsl.utilities.random.rvariable">AbstractRVariable</a></code></dd>
